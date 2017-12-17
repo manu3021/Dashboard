@@ -1,0 +1,129 @@
+body {
+  background: rgba(212, 212, 212, 0.3);
+  margin: 0;
+}
+.header {
+  background: #ffffff;
+  padding: 10px;
+}
+#search {
+  float: right;
+  position: relative;
+}
+.filter {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+}
+div#EmployeeData {
+  margin: 3% 5%;
+}
+.employeesinfo {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 10px;
+  display: flex;
+}
+.desc {
+  margin: 10px;
+}
+.desc div {
+  margin-bottom: 5px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  border: 1px solid #333333;
+  margin-top: 12px;
+}
+.desjob {
+  font-size: 16px;
+}
+
+.popup {
+  position: fixed;
+  background: #fff;
+  margin: 0 auto;
+  width: 0;
+  height: 100%;
+  right: -500px;
+  padding: 75px 15px 15px 15px;
+  top: 0;
+  box-shadow: 0px -8px 11px 0 #999;
+  -webkit-transition: max-width 0.8s;
+  -moz-transition: max-width 0.8s;
+  transition: max-width 0.8s;
+  display: flex;
+}
+.open .popup { 
+  width: 100%;
+  max-width: 70%;
+  right: 0;
+}
+.gray-text {
+    color: #7c7c7c;
+}
+.home-town {
+  margin-top: 20px;
+}
+.open {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+#search_emp {
+  border: 1px solid #ccc;
+  padding: 7px;
+}
+.fa.fa-search {
+  position: absolute;
+  right: 4px;
+  background: #fff;
+  top: 6px;
+}
+.name {
+  color: #02abea;
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: block;
+}
+
+a.close {
+  position: absolute;
+  left: 26px;
+  top: 17px;
+  font-size: 28px;
+}
+#searchresult {
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    max-height: 300px;
+    overflow: auto;
+    right: 0;
+    box-shadow: 0px 0px 2px -1px #000;
+    z-index: 999;
+}
+#searchresult #EmployeeData .employeesinfo {
+  margin-bottom: 0;
+  padding: 12px;
+}
+
+#searchresult #EmployeeData {
+  margin: 0;
+}
+#searchresult .name {
+  margin-bottom: 2px;
+}
+#searchresult .employeesinfo {
+  padding: 0px 15px;
+  margin-bottom: 0;
+}

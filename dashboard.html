@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  </head>
+  <body>
+  <header class="header">
+    <div class="main-header">
+      <span>Candidates Search</span>
+      <span>Applied filter
+        <span id="filter_counter"></span>
+      </span>
+      <div id="search">
+        <input type="text" id="search_emp" onkeyup="SearchRecord()" placeholder="Search for names..">
+        <i class="fa fa-search" aria-hidden="true"></i>
+       <div id="searchresult"></div>
+      </div>
+      <div class="filter">
+       <button class="add-filter">+ Add filter</button>
+      </div>
+  </header>
+     <div id="EmployeeData"></div>
+     <div id="EmployeeData1"></div>
+     <div id="popup"></div>
+  </body>
+  <script type="text/javascript" src="dashborad.js"></script>
+</html>
